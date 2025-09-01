@@ -1,2 +1,2 @@
-def my_name():
+def get_my_name():
     return "Yangyang"
