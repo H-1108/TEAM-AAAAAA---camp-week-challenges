@@ -1,2 +1,2 @@
-def get_my_name():
+def get_maggie():
     return "Maggie"  
