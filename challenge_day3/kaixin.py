@@ -1,3 +1,3 @@
 def get_kaixin():
-    print ("Kaixin")
+    return "Kaixin"
 
