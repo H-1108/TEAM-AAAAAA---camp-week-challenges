@@ -1,2 +1,2 @@
 def get_gengxin():
-    print ("Gengxin")
+    return "Gengxin"
