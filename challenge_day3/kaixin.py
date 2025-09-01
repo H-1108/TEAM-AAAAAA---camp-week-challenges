@@ -1,3 +1,3 @@
 def get_my_name():
-    return "Kaixin"
+    print "Kaixin"
 
