@@ -1,3 +1,3 @@
-def get_my_name():
+def get_kaixin():
     print ("Kaixin")
 
