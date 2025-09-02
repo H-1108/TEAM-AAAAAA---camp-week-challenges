@@ -79,7 +79,7 @@ if __name__ == "__main__":
     
     print("Testing the solution function:")
     for expr in test_expressions:
-        result = solution_station_1756814518101(expr)
+        result = solution_station_7(expr)
         print(f"{expr} = {result}")
     
     # Interactive mode
@@ -93,3 +93,4 @@ if __name__ == "__main__":
             print(f"Result: {result}")
         except Exception as e:
             print(f"Error: {e}")
+
