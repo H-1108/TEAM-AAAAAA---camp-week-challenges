@@ -1,15 +1,15 @@
 def solution_station_4(x):
     if x<=500 or x>5850:
-        return "True"
+        return True
     else:
-        return "False"
+        return False
 
 
 #How I found the pattern:
 #import pandas as pd 
 #from sklearn.tree import DecisionTreeClassifier, export_text
 
-#sample_input = [22, 73, 67, 89, 8, 42, 2, 21, 50, 2]
+#sample_input = [22, 73, 67, 89, 8, 42, 2, 21, 50, 2, ]
 #sample_output = [False, True, True, True, False, False, True, False, False, True]
 
 #df = pd.DataFrame({"input": sample_input, "output": sample_output})
