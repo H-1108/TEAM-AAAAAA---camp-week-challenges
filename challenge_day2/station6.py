@@ -17,9 +17,7 @@ def sin_auto(x: float, ndigits: int = 4) -> float:
   rad = math.radians(x) if abs(x) > 2 * math.pi else x
   return round(math.sin(rad), ndigits)
 
-for x, y_expected in samples:
-  print(sin_auto(x))
-
 inputs  = [86,16,47,66,27,72,54,31,69,10]
 outputs = [sin_auto(v) for v in inputs]
 print(outputs)
+
