@@ -1,8 +1,17 @@
 def solution_station_4(x):
-    if x<=500 or x>5850:
-        return True
-    else:
+    if x < 2:
         return False
+    if x == 2:
+        return True
+    if x % 2 == 0:
+        return False
+    i = 3
+    while i * i <= x:
+        if x % i == 0:
+            return False
+        i += 2
+    return True
+
 
 
 #How I found the pattern:
