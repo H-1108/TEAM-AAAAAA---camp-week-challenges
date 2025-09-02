@@ -3,16 +3,7 @@ import numpy as np
 import pandas as pd
 
 def solution_station_7(input_expr):
-    """
-    Solves for variables a, b, c, d, e based on the given equations,
-    then evaluates the input expression using these values.
-    
-    Parameters:
-    input_expr (str): Mathematical expression using variables a, b, c, d, e
-    
-    Returns:
-    float: Result of evaluating the expression with the solved variable values
-    """
+   
     # Define symbolic variables
     a, b, c, d, e = sp.symbols('a b c d e')
     
@@ -93,5 +84,6 @@ if __name__ == "__main__":
             print(f"Result: {result}")
         except Exception as e:
             print(f"Error: {e}")
+
 
 
