@@ -29,9 +29,9 @@ samples = [
   ("2023-03-21", "火曜日"),
 ]
 
-from datetime import data
+from datetime import date
 
-def date_to_japanese_weekdays(s:str) -> str:
+def date_to_japanese_weekday(s:str) -> str:
   weekdays = ["月曜日", "火曜日", "水曜日", "木曜日", "金曜日", "土曜日", "日曜日"]
   d = date.fromisoformat(s)
   return weekdays[d.weekday()]
@@ -52,3 +52,4 @@ result = dict(zip(inputs, outputs))
 if __name__ == "__main__":
     for s, out in zip(inputs, outputs):
         print(s, out)
+
