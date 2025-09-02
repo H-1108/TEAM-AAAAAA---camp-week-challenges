@@ -1,5 +1,5 @@
 def solution_station_4(x):
-    if x<= OR x>58.50:
+    if x<=5.00 OR x>58.50:
         return "True"
     else
         return "False"
