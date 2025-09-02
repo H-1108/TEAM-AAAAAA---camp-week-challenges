@@ -1,5 +1,4 @@
 def solution_station_5(name: str) -> int:
-    # Define learning teams
     learning_teams = {
         1: [
             "Daeho", "David", "Kaisa", "Oliver", "Sara", "Dan", "Ivar", "Lotte", "Riya", "Vassil",
@@ -25,7 +24,10 @@ def solution_station_5(name: str) -> int:
         ]
     }
 
-    
+    key = name.strip().casefold()
+
     for team_number, members in learning_teams.items():
-        if name in members:
+        if any(key == m.casefold() for m in members):
             return team_number
+        
+    return -1
