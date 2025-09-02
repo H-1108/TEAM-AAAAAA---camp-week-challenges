@@ -17,7 +17,7 @@ def solution_station_7(input_expr):
         result = expr.subs(symbols)
         return float(result) 
     except Exception as e:
-        return f"错误: {e}"
+        return f"false: {e}"
 
 
 if __name__ == "__main__":
@@ -30,5 +30,6 @@ if __name__ == "__main__":
     for expr in test_expressions:
         result = solution_station_7(expr)
         print(f"{expr} = {result}")
+
 
 
