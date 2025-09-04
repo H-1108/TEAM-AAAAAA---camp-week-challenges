@@ -25,7 +25,7 @@ fn main() -> io::Result<()> {
         }
         
         let parts: Vec<&str> = line.split(',').collect();
-        if parts.len() < 6 {
+        if parts.len() < 7 {
             continue; // Skip invalid lines
         }
         
