@@ -29,10 +29,10 @@ for col_name in names(people_df)[2:end]
         continue
     end
 
-    quartiles = quantile(valid_data, [0.25, 0.5, 0.75])
+    quartiles = quantile(collect(Float64.(valid_data)), [0.25, 0.5, 0.75])
 
     # Replace values with categories or 'low' if they are Float64
-    new_col = map(x -> x isa Float64 ? "low" : classification_score(x, quartiles), col_data)
+    new_col = map(x -> x isa Float64 ? "low" : classify_score(x, quartiles), col_data)
     people_df[!, col_name] = new_col
 end
 
