@@ -12,9 +12,10 @@ fn main() -> io::Result<()> {
     let mut output = OpenOptions::new()
         .write(true)
         .create(true)
+        .truncate(true)
         .open("data6.txt")?;
     
-    for (indexing, line) in reader.lines().enumerate() {
+    for (index, line) in reader.lines().enumerate() {
         let line = line?;
         
         if index == 0 {
@@ -59,7 +60,7 @@ fn main() -> io::Result<()> {
             0.0 // or whatever you want to set it to if no skills are evaluated
         };
         
-        writeln!(output, "{},{},{}", line, parts[6], evaluation)?;
+        writeln!(output, "{},{}", line, evaluation)?;
     }
     
     Ok(())
